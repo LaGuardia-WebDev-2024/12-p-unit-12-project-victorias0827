@@ -1,14 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Delius&family=Poetsen+One&display=swap");
 
 html {
-  background-color: white;
+  background-color: pink;
   padding-left: 20px;
 }
 
 img{
-  border-radius: 30px;
+  border-radius: 70px;
 }
 
 h1 {
   font-family: "Poetsen One", sans-serif;
+}
+
+h3 {
+  font-family: "Verdana", sans-serif;
+
+}
+
+p {
+  border: 2px solid purple;
+  border-radius: 10px;
+  width: 270px;
+  background-color: white;
+}
+
+
+
+
+
 }

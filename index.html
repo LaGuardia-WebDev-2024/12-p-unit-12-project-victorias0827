@@ -1,15 +1,15 @@
 <!-- Unit 12 Project
 Requirements
-[  ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
-[  ] Include Three Images
+[ yes ] $() Select by Element, ID AND Class 
+[ yes ] Use Three Different jQuery Methods 
+[ 5 ] Add Five CSS Declarations
+[ 3 ] Include Three Images
 
 Select ONE Additional 
 [ no ] Feature 1 - Use .addClass() method
 [ no ] Feature 2 - Use a variable in javaScript 
 [ no ] Feature 3 - Use .mouseover() method
-[ no ] Feature 4 - Use .show() method
+[ yes ] Feature 4 - Use .show() method
 [ no ] Feature 5 - Use .append() method
 -->
 
@@ -29,33 +29,51 @@ Select ONE Additional
     <ol>
       <li>
         <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
-      </li>
+        <p>Seeing a 93 average on my report card.</p>
+        <img
+        src = "https://www.burlingtoncountytimes.com/gcdn/authoring/2012/07/20/NBCO/ghows-PA-931e0862-18fc-491a-bf46-90c5c55d2f62-085d4aba.jpeg?width=660&height=545&fit=crop&format=pjpg&auto=webp"
+      width = "200" id="grade" style="display:none" >
+             </li>
 
       <li>
         <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+        <p>Winter Sing.</p> 
+        <img
+             src= "https://media.npr.org/assets/img/2022/05/18/sol-cotti---npr-sing_slide-f4dcb90ae5a299fe8075fdf92cb1b7383ff0d728.jpg"
+             width="200" id="sing" style="display: none">
       </li>
 
       <li>
         <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <p>Thinking about summer everyday</p>
+        <img 
+             src= "https://static.vecteezy.com/system/resources/thumbnails/045/784/835/small_2x/summer-text-written-on-a-sand-of-a-beach-photo.jpg"
+      width="200" class="summer" style="display:none">
       </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
       $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
+        $("#mem1").css("color", "blue");
+        $("#grade").show(2000)
+        
       });
 
       $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
+        $("#mem2").css("color", "green");
+        $("#sing").show(2000)
       });
 
       $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
+        $("#mem3").css("color", "red");
+        $(".summer").show(2000)
       });
+      
+      $("span").text("this School Year");
+      
+      $("h1").css("color", "purple");
+            
     </script>
   </body>
 </html>
